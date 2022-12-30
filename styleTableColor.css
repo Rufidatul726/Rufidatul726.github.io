@@ -1,0 +1,60 @@
+.table{
+    border: 3px solid #000;
+    border-collapse: collapse;
+    width: 80%;
+    border: none;
+    margin: 0px 0px 0px 260px;
+}
+.table-th{
+    /* background-color: rgb(104, 104, 177); */
+    border: none;
+    font-weight: auto;
+    font-size: 30px;
+    font-family: "Script MT Bold", "Lucida Handwriting", "Comic Sans MS", cursive;
+    color: rgb(93, 59, 172);
+    cursor: pointer;
+}
+
+.table-th:hover{
+    background-color: rgb(196, 180, 252);
+}
+
+.Aurchey{
+    transform: scaleX(-1);
+    width: 449px;
+    height: 590px;
+}
+
+#Name{
+    font-family: "Script MT Bold", "Lucida Handwriting", "Comic Sans MS", cursive;
+    font-size: 50px;
+    color: rgb(39, 39, 112);
+    text-align: center;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-delay: 12ms;
+
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1.5;
+    }
+}
+
+hr{
+    border: 1px solid rgb(39, 39, 112);
+}
+
+.Descriptiion{
+    font-size: 30px;
+    margin: 2px 0px 0px 0px;;    
+}
