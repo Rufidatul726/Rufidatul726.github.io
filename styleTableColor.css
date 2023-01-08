@@ -81,6 +81,11 @@ hr{
     
     /* border: 1px solid rgb(39, 39, 112);  */
 }
+.copyrightinAwards{
+    font-size: 20px;
+    /* text-align: center; */
+    margin: 250px 0px 0px 600px;
+}
 
 .AwardImage{
     padding-left: 550px;
