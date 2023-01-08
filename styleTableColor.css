@@ -93,3 +93,22 @@ hr{
 .Award{
     text-align: center;
 }
+
+.Hobby{
+    padding-left: 550px;
+    padding-right: 100px;
+    padding-top: 30px;
+    height: 190px;
+    width: 200px;
+}
+
+.Hobbies{
+    font-family: 'Lucida Sans', cursive, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(97, 118, 187);
+}
+
+.HobbyList{
+    font-size: 20px;
+    color: rgb(64, 84, 202);
+}
