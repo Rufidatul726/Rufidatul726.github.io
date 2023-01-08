@@ -54,6 +54,20 @@ hr{
     border: 1px solid rgb(39, 39, 112);
 }
 
+.Linkedin{
+    padding-left: 50px;
+    padding-right: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.Facebook{
+    padding-left: 30px;
+    padding-right: 50px;
+    height: 40px;
+    width: 60px;
+}
+
 .Descriptiion{
     font-size: 30px;
     margin: 2px 0px 0px 0px;;    
