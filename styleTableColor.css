@@ -81,3 +81,15 @@ hr{
     
     /* border: 1px solid rgb(39, 39, 112);  */
 }
+
+.AwardImage{
+    padding-left: 550px;
+    padding-right: 100px;
+    padding-top: 100px;
+    height: 150px;
+    width: 200px;
+}
+
+.Award{
+    text-align: center;
+}
