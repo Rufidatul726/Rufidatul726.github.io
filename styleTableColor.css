@@ -58,3 +58,12 @@ hr{
     font-size: 30px;
     margin: 2px 0px 0px 0px;;    
 }
+
+
+.copyright{
+    font-size: 20px;
+    /* text-align: center; */
+    margin: 160px 0px 0px 600px;
+    display: inline-block;
+    /* border: 1px solid rgb(39, 39, 112);  */
+}
