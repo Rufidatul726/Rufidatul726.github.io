@@ -1,0 +1,44 @@
+.table{
+    border: 3px solid #000;
+    border-collapse: collapse;
+    width: 80%;
+    border: none;
+    margin: 0px 0px 0px 260px;
+}
+.table-th{
+    border: none;
+    font-weight: auto;
+    font-size: 30px;
+    font-family: "Script MT Bold", "Lucida Handwriting", "Comic Sans MS", cursive;
+    color: rgb(93, 59, 172);
+    cursor: pointer;
+}
+
+.table-th:hover{
+    background-color: rgb(196, 180, 252);
+}
+.Education{
+    font-size: 20px;
+    margin: 80px 0px 0px 130px;
+    text-align: center;
+    border: 1px solid rgb(39, 39, 112);
+    width: 80%;
+    height: 70%;
+}
+
+.header{
+    border: 2px solid rgb(39, 39, 112);
+    font-size: 25 px;
+}
+
+.data{
+    border: 1px solid rgb(39, 39, 112);
+    font-size: 20 px;
+}
+
+.EduCopyright{
+    font-size: 20px;
+    text-align: center;
+    /* margin: 0px 0px 0px 590px; */
+    /* display: inline-block; */
+}
