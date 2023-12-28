@@ -1,0 +1,152 @@
+@import 'utilities.css';
+
+:root{
+    --primary-color: #3dcfd3;
+    --dark: #161616;
+    --pure-white: #fff;
+    --light: #f2f2f2;
+    --ternary-color: #898989;
+}
+
+:body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% calc(100% - 7vw), 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header nav .left a{
+    color: var(--pure-white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary-color);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .logo{
+    margin-right: 3rem;
+}
+
+header nav .logo img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.hero .left img {
+    width: 400px;
+}
+
+.hero .right {
+    color: var(--pure-white);
+}
+
+.hero .right h6{
+    color: var(--pure-white);
+}
+
+.hero .right h3{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.hero .right p{
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.hero .right {
+    margin-top: -7rem;
+}
+
+section{
+    padding: 7rem 0;
+}
+
+.about .left img{
+    height: 450px;
+}
+
+.about .right h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.about .right h1 span{
+    color: var(--primary-color);
+}
+
+.about .right h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.about .right p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary-color);
+    line-height: 1.4;
+}
+
+.about .right .social-links{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.about .right .social-links a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.about .right .social-links a:hover{
+    background-color: var(--ternary-color);
+}
+
+.about .right .social-links a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}

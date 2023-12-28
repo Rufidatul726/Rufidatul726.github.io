@@ -1,59 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styleTableColor.css">
-    <title>Rufidatul Radium</title>
-    <link rel="icon" href="images/favicon.ico">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@300&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <table class="table">
-           <tr>
-            <th>
-                <a href="index.html"><button class="table-th" style="background-color: rgb(141, 84, 194); color: aliceblue; ">Home</button></a>
-            </th>
-            <th>
-                <a href="Education.html"><button class="table-th">Education</button></a>
-            </th>
-            <th>
-               <a href="AwardsAndAchievement.html"><button class="table-th">Award and Scholarship</button></a>
-            </th>
-            <th>
-               <a href="Hobbies.html"><button class="table-th">Hobbies</button></a> 
-            </th>
-           </tr>
-       </table>
-    
-    <p>
-             <img align="right" class="Aurchey" src="images/DSC_0966%20(3).JPG" alt="Rufidatul Radium">  
-            <p id="Name" align="center" style="font-size: 30px;" >
-                <b>Welcome to the Portfolio of</b>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Estonia&family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Estonia&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div class="logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Achievements</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn btn-primary">Contact Me</button>
+                </div>
+            </nav>
+            <div class="hero flex items-center justify-between">
+                <div class="left flex-1 flex justify-center">
+                    <img src="./images/man.png" alt="hero">
+                </div>
+                <div class="right flex-1">
+                    <div class="content">
+                        <h6>Hello, I'm</h6>
+                        <h3>Rufidatul Radium</h3>
+                        <h1>I'm a
+                            <span class="txt-rotate typing" data-period="2000" 
+                            data-rotate='[ "Web Developer", "Android Developer", "Freelancer" ]'></span>
+                        </h1>
+                        <p>I am a proactive undergraduate student specializing in 
+                            software engineering at IIT, University of Dhaka, 
+                            with a focus on MERN stack web development. I have extensive experience 
+                            in developing web applications using various technologies, 
+                            such as Node.js, React.js, Next.js, MongoDB, and APIs.</p>
+                        <button class="btn btn-secondary">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container flex items-center justify-between">
+            <div class="left flex-1 flex justify-center">
+                <img src="./images/man-2.png" alt="about">
+            </div>
+            <div class="right flex-1">
+                <h1>About <span>Me </span></h1>
+                <h3>Hello! I am Rufidatul Radium</h3>
+                <p>I am an ambitious undergraduate student specializing in 
+                    software engineering with a focus on full-stack 
+                    web development, AI projects, and DevOps. With hands-on 
+                    experience in MERN stack development and 
+                    a strong foundation in various programming languages, 
+                    I have excelled in roles such as Junior Software Developer 
+                    at Intelligent Dive and Contract Developer at WarCities. 
+                    Passionate about innovation, I am eager to contribute 
+                    technical expertise and creativity to dynamic projects 
+                    in the tech industry.
+                </p>
+                <div class="social-links">
+                    <a href="#"><img src="./images/website.svg" alt="website"></a>
+                    <a href="#"><img src="./images/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
+                    <a href="#"><img src="./images/github.svg" alt="github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="container">
+            <h1 class="section-heading">My <span>Skills</span></h1>
+            <p>
+                I have experience in developing web applications using various technologies, 
+                such as Node.js, React.js, Next.js, MongoDB, and APIs.
             </p>
-            <h1 id="Name">Rufidatul Radium</h1>
-            <hr>
-            <p class="Descriptiion">
-                Hi, I am Rufidatul Radium. Currently I am working as a graphic designer
-                and front-end developer. Collaborating with different teams, I have
-                worked on different projects. I have also worked as a freelancer. 
-                <br>contact me:<br>
-                <a href= https://www.linkedin.com/in/rufidatul-radium target="_blank" style="color: aliceblue;">
-                    <img class="Linkedin" src="images/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href= https://www.facebook.com/rufidatul.radium target="_blank">
-                    <img class="Facebook" src="images/Facebook.png" alt="Facebook">
-                </a>
-                <br>or send me email <a href="mailto: radiumrufidatul@gmail.com">here</a>
-                <br>Thank you for visiting my website.
-            </p>
-        </p>
-
-       <div class="copyright" >
-            <p>&copy; Rufidatul Radium</p>
-       </div>
-        
-  </body>
+        </div>
+    </section>
+    <section class="projects"></section>
+    <section class="achievements"></section>    
+</body>
 </html>
