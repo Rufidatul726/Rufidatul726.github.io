@@ -59,3 +59,12 @@ TxtRotate.prototype.tick = function () {
         that.tick();
     }, delta);
 };
+
+$(document).ready(function () {
+    $('.slide-wrapper').slick({
+        arrows: false,
+        dots: true,
+        appendDots: '.slider-dot',
+        dotsClass: 'dots',
+    });
+});

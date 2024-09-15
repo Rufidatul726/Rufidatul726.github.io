@@ -242,3 +242,56 @@ section.freelancer p{
     color: var(--ternary-color);
     margin-bottom: 2rem;
 }
+
+section.reviews .slide-wrapper .slide{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+section.reviews .slide-wrapper .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slide-wrapper .slide p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary-color);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slide-wrapper .slide span{
+    font-size: 0.8rem;
+}
+
+section.reviews .slider-dot {
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dot .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.reviews .slider-dot button{
+    font-size: 0;
+    width: 10px;
+    height: 4px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: var(--ternary-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button{
+    background-color: var(--primary-color);
+    width: 20px;
+}
