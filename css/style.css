@@ -223,3 +223,22 @@ section.services .card-wrapper .card:hover{
 section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
     color: var(--pure-white);
 }
+
+section.freelancer{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)), url('../images/camera.png') center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    color: var(--pure-white);
+    text-align: center;
+    padding-bottom: 12rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary-color);
+    margin-bottom: 2rem;
+}
