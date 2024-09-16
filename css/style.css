@@ -32,6 +32,30 @@ header{
     padding: 0 15px;
 }
 
+@media (max-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
 header nav .left a{
     color: var(--pure-white);
     text-decoration: none;
@@ -306,8 +330,6 @@ section.work{
 }
 
 section.work .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -498,3 +520,52 @@ footer .copyright{
     font-family: 'Lato', sans-serif;
     color: var(--ternary-color);
 }
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 87%, 0 100%);
+    }
+
+    .hero{
+        padding-top: 10rem;
+        
+    }
+
+    .hero .left img{
+        width: 280px;
+    }
+
+    .hero .right h1{
+        font-size: 2.5rem;
+    }
+
+    .about .left img{
+        height: 350px;
+    }
+
+    section.about{
+        padding: 4rem 2rem;
+    }
+
+    .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.blog{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 95%, 0 100%);
+    }
+
+    section.blog .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem;
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
