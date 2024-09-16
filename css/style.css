@@ -14,6 +14,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -522,9 +526,9 @@ footer .copyright{
 }
 
 @media (max-width: 1024px){
-    header #main-nav{
+    /* header #main-nav{
         display: none;
-    }
+    } */
 
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 87%, 0 100%);
@@ -641,8 +645,4 @@ footer .copyright{
     section.contact .card-wrapper, section.contact .input-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
-
-    
-
-
 }
