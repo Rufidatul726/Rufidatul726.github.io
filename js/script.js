@@ -94,3 +94,23 @@ function scrollToSection(sectionId) {
 
     section.scrollIntoView({ behavior: 'smooth' });
 }
+
+function showResume() {
+    var resume = document.querySelector('.resume-wrapper');
+    resume.style.display = 'block';
+}
+
+function downloadResume() {
+    var link = document.createElement('a');
+    link.href = 'documents/resume.pdf';
+    link.download = 'rufidatulRadium.pdf';
+    link.click();
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
