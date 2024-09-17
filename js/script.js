@@ -1,7 +1,12 @@
 // script.js
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {  // When the page is loaded
     var elements = document.querySelectorAll('.txt-rotate');
+    let hamberger = document.querySelector(".hamberger");
+    let times = document.querySelector('.times');
+    let mobileNav = document.querySelector('.mobile-nav');
+    let navLinks = document.querySelectorAll('.nav-link');
+    
     for (var i = 0; i < elements.length; i++) {
         var toRotate = JSON.parse(elements[i].getAttribute('data-rotate'));
         var period = elements[i].getAttribute('data-period');
@@ -15,6 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
+
+    hamberger.addEventListener('click', function () {
+        mobileNav.classList.add('open');
+    });
+
+    times.addEventListener('click', function () {
+        mobileNav.classList.remove('open');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileNav.classList.remove('open');
+        });
+    });
 });
 
 var TxtRotate = function (el, toRotate, period) {

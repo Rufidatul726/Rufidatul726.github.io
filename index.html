@@ -18,350 +18,369 @@
     <script src="./js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav id="main-nav" class="flex items-center justify-between">
-                <div class="left flex items-center">
-                    <div class="logo">
-                        <img src="./images/logo.svg" alt="logo">
+    <div class="side-main-wrapper">
+        <button class="hamberger" onclick="click">
+            <img src="./images/hamberger.svg" alt="">
+        </button>
+        <div class="mobile-nav">
+            <button class="close">
+                <img class="times" src="./images/times.svg" alt="">
+            </button>
+            <ul>
+                <li><a href="#hero" class="nav-link" >Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- <li><a href="#achievements" class="nav-link">Achievements</a></li> -->
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="logo">
+                            <img src="./images/logo.svg" alt="logo">
+                        </div>
+                        <div class="menu">
+                            <a href="#hero">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                            <!-- <a href="#achievements">Achievements</a> -->
+                        </div>
                     </div>
-                    <div class="menu">
-                        <a href="#hero">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
-                        <!-- <a href="#achievements">Achievements</a> -->
+                    <div class="right">
+                        <button class="btn btn-primary" onclick="">Contact Me</button>
+                    </div>
+                </nav>
+                <div id="hero" class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="./images/man.png" alt="hero">
+                    </div>
+                    <div class="right flex-1">
+                        <div class="content">
+                            <h6>Hello, I'm</h6>
+                            <h3>Rufidatul Radium</h3>
+                            <h1>I'm a
+                                <span class="txt-rotate typing" data-period="2000" 
+                                data-rotate='[ "Web Developer", "ML Engineer", "Designer" ]'></span>
+                            </h1>
+                            <p>I am a proactive undergraduate student specializing in 
+                                software engineering at IIT, University of Dhaka, 
+                                with a focus on MERN stack web development. I have extensive experience 
+                                in developing web applications using various technologies, 
+                                such as Node.js, React.js, Next.js, MongoDB, and APIs.</p>
+                            <button class="btn btn-secondary">Download Resume</button>
+                        </div>
                     </div>
                 </div>
-                <div class="right">
-                    <button class="btn btn-primary" onclick="">Contact Me</button>
-                </div>
-            </nav>
-            <div id="hero" class="hero flex items-center justify-between">
+            </div>
+        </header>
+        <section class="about" id="about">
+            <div class="container flex items-center justify-between flex-wrapper">
                 <div class="left flex-1 flex justify-center">
-                    <img src="./images/man.png" alt="hero">
+                    <img src="./images/man-2.png" alt="about">
                 </div>
                 <div class="right flex-1">
-                    <div class="content">
-                        <h6>Hello, I'm</h6>
-                        <h3>Rufidatul Radium</h3>
-                        <h1>I'm a
-                            <span class="txt-rotate typing" data-period="2000" 
-                            data-rotate='[ "Web Developer", "ML Engineer", "Designer" ]'></span>
-                        </h1>
-                        <p>I am a proactive undergraduate student specializing in 
-                            software engineering at IIT, University of Dhaka, 
-                            with a focus on MERN stack web development. I have extensive experience 
-                            in developing web applications using various technologies, 
-                            such as Node.js, React.js, Next.js, MongoDB, and APIs.</p>
-                        <button class="btn btn-secondary">Download Resume</button>
+                    <h1>About <span>Me </span></h1>
+                    <h3>Hello! I am Rufidatul Radium</h3>
+                    <p>I am an ambitious undergraduate student specializing in 
+                        software engineering with a focus on full-stack 
+                        web development, AI projects, and DevOps. With hands-on 
+                        experience in MERN stack development and 
+                        a strong foundation in various programming languages, 
+                        I have excelled in roles such as Junior Software Developer 
+                        at Intelligent Dive and Contract Developer at WarCities. 
+                        Passionate about innovation, I am eager to contribute 
+                        technical expertise and creativity to dynamic projects 
+                        in the tech industry.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><img src="./images/website.svg" alt="website"></a>
+                        <a href="#"><img src="./images/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
+                        <a href="#"><img src="./images/github.svg" alt="github"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="about" id="about">
-        <div class="container flex items-center justify-between flex-wrapper">
-            <div class="left flex-1 flex justify-center">
-                <img src="./images/man-2.png" alt="about">
-            </div>
-            <div class="right flex-1">
-                <h1>About <span>Me </span></h1>
-                <h3>Hello! I am Rufidatul Radium</h3>
-                <p>I am an ambitious undergraduate student specializing in 
-                    software engineering with a focus on full-stack 
-                    web development, AI projects, and DevOps. With hands-on 
-                    experience in MERN stack development and 
-                    a strong foundation in various programming languages, 
-                    I have excelled in roles such as Junior Software Developer 
-                    at Intelligent Dive and Contract Developer at WarCities. 
-                    Passionate about innovation, I am eager to contribute 
-                    technical expertise and creativity to dynamic projects 
-                    in the tech industry.
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading">My <span>Services</span></h1>
+                <p>
+                    I provide a wide range of services to help you achieve your goals. 
+                    I am here to help you with your web and mobile app development.
                 </p>
-                <div class="social-links">
-                    <a href="#"><img src="./images/website.svg" alt="website"></a>
-                    <a href="#"><img src="./images/facebook.svg" alt="facebook"></a>
-                    <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
-                    <a href="#"><img src="./images/github.svg" alt="github"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services" class="services">
-        <div class="container">
-            <h1 class="section-heading">My <span>Services</span></h1>
-            <p>
-                I provide a wide range of services to help you achieve your goals. 
-                I am here to help you with your web and mobile app development.
-            </p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/code.svg" alt="web-development">
-                    <h2>Web Development</h2>
-                    <p>
-                        I build responsive web apps using technologies like Node.js, React.js, Next.js, and MongoDB.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/brush.svg" alt="graphic-design">
-                    <h2>Graphic Design</h2>
-                    <p>
-                        I create visually appealing designs, including logos and social media content, using Adobe tools.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/desktop.svg" alt="web-design">
-                    <h2>Web Design</h2>
-                    <p>
-                        I design user-friendly and engaging websites that offer seamless experiences across devices.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/documentation.svg" alt="app-documentation">
-                    <h2>Software Documentation</h2>
-                    <p>
-                        I provide clear software documentation, including user guides and API references, for easy understanding.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/phone.svg" alt="app-development">
-                    <h2>App Development</h2>
-                    <p>
-                        I develop mobile apps using frameworks like Flutter and React Native, focusing on performance and usability.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/ml.svg" alt="artificial-intelligence">
-                    <h2>AI Engineering</h2>
-                    <p>
-                        I build AI solutions, using machine learning to automate tasks and enhance decision-making processes.
-                    </p>
-                </div>                
-            </div>
-        </div>
-    </section>  
-    <section id="skills" class="skills">
-        <div class="container">
-            <h1 class="section-heading">My <span>Skills</span></h1>
-            <p>
-                I have experience in developing web applications using various technologies, 
-                such as Node.js, React.js, Next.js, MongoDB, and APIs.
-            </p>
-        </div>
-    </section>
-    <section id="freelancer" class="freelancer">
-        <h1>I am available for freelancing.</h1>
-        <p>
-            Whether you need a website, mobile app, or AI solution, I am here to help you. We can discuss your project requirements and get started.
-        </p>
-        <button class="btn btn-primary">Hire Me</button>
-    </section>
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <h1 class="section-heading"><span>Our</span> Client</h1>
-            <p>
-                Here are some reviews from my clients who have worked with me on various projects.
-            </p>
-            <div class="slide-wrapper">
-                <div class="slide">
-                    <img src="./images/lady.png" alt="client-1">
-                    <p>
-                        Rufidatul is a talented developer who has helped us build a web app for our business. 
-                        She is professional, responsive, and delivers high-quality work. 
-                        We are very happy with the results and would recommend her to anyone looking for a skilled developer.
-                        <span> - Jane Doe, CEO of Company A</span>
-                    </p>
-                </div>
-                <div class="slide">
-                    <img src="./images/lady.png" alt="client-1">
-                    <p>
-                        Rufidatul is a talented developer who has helped us build a web app for our business. 
-                        She is professional, responsive, and delivers high-quality work. 
-                        We are very happy with the results and would recommend her to anyone looking for a skilled developer.
-                        <span> - Jane Doe, CEO of Company A</span>
-                    </p>
-                </div>
-                <div class="slide">
-                    <img src="./images/lady.png" alt="client-1">
-                    <p>
-                        Rufidatul is a talented developer who has helped us build a web app for our business. 
-                        She is professional, responsive, and delivers high-quality work. 
-                        We are very happy with the results and would recommend her to anyone looking for a skilled developer.
-                        <span> - Jane Doe, CEO of Company A</span>
-                    </p>
-                </div>
-                <div class="slide">
-                    <img src="./images/lady.png" alt="client-1">
-                    <p>
-                        Rufidatul is a talented developer who has helped us build a web app for our business. 
-                        She is professional, responsive, and delivers high-quality work. 
-                        We are very happy with the results and would recommend her to anyone looking for a skilled developer.
-                        <span> - Jane Doe, CEO of Company A</span>
-                    </p>
-                </div>
-            </div>
-            <div class="slider-dot"></div>
-        </div>
-    </section>
-    <section id="projects" class="work">
-        <div class="container">
-            <h1 class="section-heading"><span>My</span> Work</h1>
-            <p>
-                Here are some of the projects I have worked on. Click on the images to view the project details.
-            </p>
-
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-1.png" alt="ph-1">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-2.png" alt="ph-1">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-3.png" alt="ph-1">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-3.png" alt="ph-1">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-1.png" alt="ph-1">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Catergory</span>
-                        <a href="#">Project Name</a>
-                    </div>
-                    <img src="./images/ph-2.png" alt="ph-1">
-                </div>
-            </div>
-        </div>
-    </section>  
-    <section class="blog">
-        <div class="container">
-            <h1 class="section-heading"><span>My</span> Blog</h1>
-            <p>
-                Here are some of the blog posts I have written on various topics related to web development, AI, and design.
-            </p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./images/article-ph-1.png" alt="blog-1">
-                    </div>
-                    <div class="content">
-                        <a href="#"><h1>Blog Post Title</h1></a>
-                        <span>12 May, 2017</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./images/article-ph-2.png" alt="blog-1">
-                    </div>
-                    <div class="content">
-                        <a href="#"><h1>Blog Post Title</h1></a>
-                        <span>12 May, 2017</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./images/article-ph-3.png" alt="blog-1">
-                    </div>
-                    <div class="content">
-                        <a href="#"><h1>Blog Post Title</h1></a>
-                        <span>12 May, 2017</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact">
-        <div class="container">
-            <h1 class="section-heading">Contact <span>Me</span></h1>
-            <p>
-                If you have any questions or would like to discuss a project, 
-                feel free to contact me using the form below. I will get back to you as soon as possible.
-            </p>
-            <form action="">
                 <div class="card-wrapper">
                     <div class="card">
-                        <img src="./images/phone-2.svg" alt="">
-                        <h1>Call Us On</h1>
-                        <p>+880 123 456 789</p>
+                        <img src="./images/code.svg" alt="web-development">
+                        <h2>Web Development</h2>
+                        <p>
+                            I build responsive web apps using technologies like Node.js, React.js, Next.js, and MongoDB.
+                        </p>
                     </div>
                     <div class="card">
-                        <img src="./images/msg.svg" alt="">
-                        <h1>Email me at</h1>
-                        <p>radiumrufidatul@gmail.com</p>
+                        <img src="./images/brush.svg" alt="graphic-design">
+                        <h2>Graphic Design</h2>
+                        <p>
+                            I create visually appealing designs, including logos and social media content, using Adobe tools.
+                        </p>
                     </div>
                     <div class="card">
-                        <img src="./images/map.svg" alt="">
-                        <h1>Visit Office at</h1>
-                        <p>Dhaka</p>
+                        <img src="./images/desktop.svg" alt="web-design">
+                        <h2>Web Design</h2>
+                        <p>
+                            I design user-friendly and engaging websites that offer seamless experiences across devices.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/documentation.svg" alt="app-documentation">
+                        <h2>Software Documentation</h2>
+                        <p>
+                            I provide clear software documentation, including user guides and API references, for easy understanding.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/phone.svg" alt="app-development">
+                        <h2>App Development</h2>
+                        <p>
+                            I develop mobile apps using frameworks like Flutter and React Native, focusing on performance and usability.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/ml.svg" alt="artificial-intelligence">
+                        <h2>AI Engineering</h2>
+                        <p>
+                            I build AI solutions, using machine learning to automate tasks and enhance decision-making processes.
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </section>  
+        <section id="skills" class="skills">
+            <div class="container">
+                <h1 class="section-heading">My <span>Skills</span></h1>
+                <p>
+                    I have experience in developing web applications using various technologies, 
+                    such as Node.js, React.js, Next.js, MongoDB, and APIs.
+                </p>
+            </div>
+        </section>
+        <section id="freelancer" class="freelancer">
+            <h1>I am available for freelancing.</h1>
+            <p>
+                Whether you need a website, mobile app, or AI solution, I am here to help you. We can discuss your project requirements and get started.
+            </p>
+            <button class="btn btn-primary">Hire Me</button>
+        </section>
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Client</h1>
+                <p>
+                    Here are some reviews from my clients who have worked with me on various projects.
+                </p>
+                <div class="slide-wrapper">
+                    <div class="slide">
+                        <img src="./images/lady.png" alt="client-1">
+                        <p>
+                            Rufidatul is a talented developer who has helped us build a web app for our business. 
+                            She is professional, responsive, and delivers high-quality work. 
+                            We are very happy with the results and would recommend her to anyone looking for a skilled developer.
+                            <span> - Jane Doe, CEO of Company A</span>
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/lady.png" alt="client-1">
+                        <p>
+                            Rufidatul is a talented developer who has helped us build a web app for our business. 
+                            She is professional, responsive, and delivers high-quality work. 
+                            We are very happy with the results and would recommend her to anyone looking for a skilled developer.
+                            <span> - Jane Doe, CEO of Company A</span>
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/lady.png" alt="client-1">
+                        <p>
+                            Rufidatul is a talented developer who has helped us build a web app for our business. 
+                            She is professional, responsive, and delivers high-quality work. 
+                            We are very happy with the results and would recommend her to anyone looking for a skilled developer.
+                            <span> - Jane Doe, CEO of Company A</span>
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/lady.png" alt="client-1">
+                        <p>
+                            Rufidatul is a talented developer who has helped us build a web app for our business. 
+                            She is professional, responsive, and delivers high-quality work. 
+                            We are very happy with the results and would recommend her to anyone looking for a skilled developer.
+                            <span> - Jane Doe, CEO of Company A</span>
+                        </p>
                     </div>
                 </div>
-                <div class="input-wrapper">
-                    <input type="text" placeholder="Your Name *">
-                    <input type="email" name="email" id="email" placeholder="Your Email *">
+                <div class="slider-dot"></div>
+            </div>
+        </section>
+        <section id="projects" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span> Work</h1>
+                <p>
+                    Here are some of the projects I have worked on. Click on the images to view the project details.
+                </p>
+    
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-1.png" alt="ph-1">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-2.png" alt="ph-1">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-3.png" alt="ph-1">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-3.png" alt="ph-1">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-1.png" alt="ph-1">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Catergory</span>
+                            <a href="#">Project Name</a>
+                        </div>
+                        <img src="./images/ph-2.png" alt="ph-1">
+                    </div>
                 </div>
-                <div class="input-wrapper-2">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message *"></textarea>
+            </div>
+        </section>  
+        <section class="blog">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span> Blog</h1>
+                <p>
+                    Here are some of the blog posts I have written on various topics related to web development, AI, and design.
+                </p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/article-ph-1.png" alt="blog-1">
+                        </div>
+                        <div class="content">
+                            <a href="#"><h1>Blog Post Title</h1></a>
+                            <span>12 May, 2017</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/article-ph-2.png" alt="blog-1">
+                        </div>
+                        <div class="content">
+                            <a href="#"><h1>Blog Post Title</h1></a>
+                            <span>12 May, 2017</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/article-ph-3.png" alt="blog-1">
+                        </div>
+                        <div class="content">
+                            <a href="#"><h1>Blog Post Title</h1></a>
+                            <span>12 May, 2017</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-wrapper">
-                    <button class="btn btn-primary">Send Message</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <img src="./images/logo-2.svg" alt="" class="footer-logo">
-        <div class="footer-socials">
-            <a href="#"><img src="./images/website.svg" alt=""></a>
-            <a href="#"><img src="./images/facebook.svg" alt=""></a>
-            <a href="#"><img src="./images/twitter.svg" alt=""></a>
-            <a href="#"><img src="./images/pintrest.svg" alt=""></a>
-            <a href="#"><img src="./images/instagram.svg" alt=""></a>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Rufidatul Radium. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <!-- <section class="achievements"></section>    -->
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <p>
+                    If you have any questions or would like to discuss a project, 
+                    feel free to contact me using the form below. I will get back to you as soon as possible.
+                </p>
+                <form action="">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./images/phone-2.svg" alt="">
+                            <h1>Call Us On</h1>
+                            <p>+880 123 456 789</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/msg.svg" alt="">
+                            <h1>Email me at</h1>
+                            <p>radiumrufidatul@gmail.com</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/map.svg" alt="">
+                            <h1>Visit Office at</h1>
+                            <p>Dhaka</p>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Your Name *">
+                        <input type="email" name="email" id="email" placeholder="Your Email *">
+                    </div>
+                    <div class="input-wrapper-2">
+                        <input type="text" placeholder="Subject">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message *"></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <img src="./images/logo-2.svg" alt="" class="footer-logo">
+            <div class="footer-socials">
+                <a href="#"><img src="./images/website.svg" alt=""></a>
+                <a href="#"><img src="./images/facebook.svg" alt=""></a>
+                <a href="#"><img src="./images/twitter.svg" alt=""></a>
+                <a href="#"><img src="./images/pintrest.svg" alt=""></a>
+                <a href="#"><img src="./images/instagram.svg" alt=""></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Rufidatul Radium. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- <section class="achievements"></section>    -->
+    
+    </div>
 </body>
 </html>
