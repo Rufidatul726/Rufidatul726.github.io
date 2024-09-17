@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {  // When the page is
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-    document.body.appendChild(css);
+    document.body.appendChild(css); 
 
     hamberger.addEventListener('click', function () {
         mobileNav.classList.add('open');
@@ -87,3 +87,10 @@ $(document).ready(function () {
         dotsClass: 'dots',
     });
 });
+
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+
+    section.scrollIntoView({ behavior: 'smooth' });
+}

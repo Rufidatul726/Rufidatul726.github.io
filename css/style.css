@@ -106,7 +106,7 @@ header nav .logo img{
 }
 
 .hero .right h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -443,6 +443,7 @@ section.contact .card-wrapper .card{
 
 section.contact .card-wrapper .card img{
     margin-bottom: 3rem;
+    width: 100px;
 }
 
 section.contact .card-wrapper .card h1{
@@ -658,7 +659,8 @@ side-main-wrapper{
 
     .hero{
         flex-direction: column;
-        padding: 4rem 0;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
     }
 
     .hero .left{
@@ -672,6 +674,10 @@ side-main-wrapper{
         top: 250px;
         padding: 0 1rem;
         background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0, 0.8),rgb(0,0,0));
+    }
+
+    .hero .right h1{
+        font-size: 1.5rem;
     }
 
     .about .flex-wrapper{
@@ -718,5 +724,6 @@ side-main-wrapper{
 
     section.contact .card-wrapper, section.contact .input-wrapper{
         grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
     }
 }
