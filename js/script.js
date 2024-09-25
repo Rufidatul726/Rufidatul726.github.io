@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {  // When the page is
     let times = document.querySelector('.times');
     let mobileNav = document.querySelector('.mobile-nav');
     let navLinks = document.querySelectorAll('.nav-link');
+
+    require('dotenv').config()
+    console.log(process.env)
     
     for (var i = 0; i < elements.length; i++) {
         var toRotate = JSON.parse(elements[i].getAttribute('data-rotate'));
@@ -114,3 +117,34 @@ function scrollToTop() {
 function scrollToBottom() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
+
+function sendEmail(){
+    var templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    const service_id = 'myportfolio';
+    const template_id = 'template_gbtthqe';
+    const user_id = '_npBymiuxTaKnuRIE';
+
+    var data = {
+        service_id: service_id,
+        template_id: template_id,
+        user_id: user_id,
+        template_params: templateParams
+    };
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+}
+        
