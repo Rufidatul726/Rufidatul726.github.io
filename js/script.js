@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {  // When the page is
     let mobileNav = document.querySelector('.mobile-nav');
     let navLinks = document.querySelectorAll('.nav-link');
 
-    require('dotenv').config()
-    console.log(process.env)
+    // require('dotenv').config()
+    // console.log(process.env)
     
     for (var i = 0; i < elements.length; i++) {
         var toRotate = JSON.parse(elements[i].getAttribute('data-rotate'));
