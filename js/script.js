@@ -105,7 +105,7 @@ function showResume() {
 
 function downloadResume() {
     var link = document.createElement('a');
-    link.href = 'documents/resume.pdf';
+    link.href = 'documents/Resume.pdf';
     link.download = 'rufidatulRadium.pdf';
     link.click();
 }
